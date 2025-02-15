@@ -3,6 +3,8 @@
     --green: #017A45; /* Green */
     --black: black; /* black */
     --off-white: #F8F5F0; /* off-white */
+    --white: #ffffff;
+
 }
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
@@ -11,6 +13,8 @@
     font-family: "Lato", serif;
     font-weight: 500 !important;
     font-style: normal;
+    background-color: var(--black);
+    color: var(--white);
 }
 nav{
     border-bottom: 5px solid var(--gold);
@@ -79,8 +83,17 @@ nav{
 #banner {
     height: 100vh;
     /* background: linear-gradient(to bottom, var(--green) .00001%, rgba(0, 128, 0, 0) 100%),    url("../image/banner.jpg");  */
-    background: url(../image/banner.jpg);
-    background-size: cover; /* Ensures the image covers the entire banner */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating *
+    /* background: url(../image/banner.jpg);
+    background-size: cover; Ensures the image covers the entire banner
+    background-position: center; Centers the image
+    background-repeat: no-repeat; Prevents the image from repeating */
+}
+.custom-toggler {
+    /* background-color: gold !important; */
+    border: 2px solid var(--gold) !important;
+    color: white !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(54%) saturate(648%) hue-rotate(2deg) brightness(107%) contrast(103%);
 }
